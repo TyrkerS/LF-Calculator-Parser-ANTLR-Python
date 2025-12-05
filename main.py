@@ -71,11 +71,11 @@ def calc(line) -> float:
     try: 
         input_stream = InputStream(line)
 
-        # lexing
+        # lexing 
         lexer = CalculatorLexer(input_stream)
         stream = CommonTokenStream(lexer)
 
-        # parsing
+        # parsing 
         parser = CalculatorParser(stream)
         tree = parser.start()
 
